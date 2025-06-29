@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "headsnapper",
+  "version": "${mod_version}",
+  "name": "HeadSnapper",
+  "description": "A simple mod that lets you snap your head to any angle using a custom keybind.",
+  "authors": [
+    "obvVexi"
+  ],
+  "contact": {
+    "homepage": "https://github.com/YourGitHubUsername/headsnapper",
+    "sources": "https://github.com/YourGitHubUsername/headsnapper"
+  },
+  "license": "MIT",
+  "icon": "assets/headsnapper/icon.png",
+
+  "environment": "*",
+
+  "entrypoints": {
+    "client": [
+      "com.example.headsnapper.HeadSnapperMod"
+    ],
+    "modmenu": [
+      "com.example.headsnapper.ConfigModMenu"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "1.21.5",
+    "fabric": "*",
+    "cloth-config": ">=11.2.70"
+  },
+
+  "suggests": {
+    "modmenu": "*"
+  }
+}
